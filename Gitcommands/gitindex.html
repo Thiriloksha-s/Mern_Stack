@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git Commands</title>
+</head>
+<body>
+    <h1>GIT AND GITHUB</h1>
+    <ul>
+        <li>Github is a platform or online website that allows us to host our code</li><br>
+        <li>Repository is a folder where all the changes are saved</li><br>
+        <li>Other hosting platforms : Gitlab, Bitbucket</li><br>
+        <li>Branches allow you to develop features, fix bugs, or safely experiment with new ideas in a contained area of your repository</li><br>
+        <li>You always create a branch from an existing branch. Typically, you might create a new branch from the default branch of your repository</li><br>
+        <li>A fork in GitHub is a copy of a repository that allows users to make changes without affecting the original repository</li><br>
+    </ul>
+    <h2>GIT COMMANDS</h2>
+    <ol>
+        <li><strong>ls</strong> - list command (lists the history of the project)</li><br>
+        <li><strong>mkdir folder_name</strong> - To create a new folder</li><br>
+        <li><strong>cd folder_name</strong> - Change the directory to that particular folder</li><br>
+        <li><strong>git init</strong> - Initialize an empty git repository</li><br>
+        <li><strong>ls -a</strong> - To display the hidden files(anything starts with dot [.])</li><br>
+        <li><strong>ls .git</strong> - To list what's inside .git folder</li><br>
+        <li><strong>touch names.txt</strong> - To create a new file</li><br>
+        <li><strong>git status</strong> - To know the status of the repository</li><br>
+        <li><strong>git add . / git add index.html</strong> - Put all the <i>untracked</i> files into the staging area</li><br>
+        <li><strong>git commit -m "Any_message"</strong> - To save them in the git history</li><br>
+        <li><strong>git config user.name "name"</strong></li><br>
+        <li><strong>git config user.email "email"</strong></li><br>
+        <li><strong>vi index.html</strong> - To edit the file</li><br>
+        <li><strong>cat index.html</strong> - Displays the content of the file</li><br>
+        <li><strong>git restore --staged index.html</strong> - This is used to take the file out of staging area</li><br>
+        <li><strong>git log</strong> - Shows the entire history</li><br>
+        <li><strong>git log --name-only</strong> - To know the name of the file that is committed</li><br>
+        <li><strong>git log --graph --decorate</strong> - To visually represent the commit history with branch structure</li><br>
+        <li><strong>rm -rf index.html</strong> - To delete the file</li><br>
+        <li><strong>git reset commit_id</strong> - If unfortunately deleted a file this command is been used and all the commits above it will be removed and put under unstaged area</li><br/>
+        <img src="image1.png" alt="git reset commit" height="50" width="500">
+        <li><strong>git stash</strong> - Takes your uncommitted changes (both staged and unstaged), saves them away for later use, and then reverts them from your working copy</li><br>
+        <li><strong>git stash pop</strong> - Brings back from stashed area</li><br>
+        <li><strong>git stash clear</strong> - Permanently deletes all stashed changes from the stash stack</li><br>
+        <li><strong>git stash list</strong> - To list all the files in the stash</li><br>
+        <li><strong>git stash show stash@{0} ; git stash show stash@{1}; git stash show stash@{2}</strong></li><br>
+        <li><strong>git remote add origin URL</strong> - To link remote repository to the local repository
+            <ul><br>
+                <li>remote - means working with URL</li><br>
+                <li>add - means adding a new URL</li><br>
+                <li>origin - means the name of the URL that you are going to add</li><br>
+            </ul>
+        </li><br>
+        <li><strong>git remote -v</strong> - shows all the URLs that is attached with origin</li><br>
+        <li><strong>git push origin master</strong> - push the changes to the URL (i.e. origin) and branch(i.e. master/main)</li><br>
+        <li><strong>git branch feature</strong> - All the code that is not finalized that you are working on should go on a separate branch so that user is not affected</li><br>
+        <p>    NOTE : feature is a branch name</p>
+        <p>    Head is the pointer which points to the last commit in the branch you are currently on</p><br>
+        <img src="image4.png" alt="Branch commands" height="250" width="600">
+        <li><strong>git checkout feature</strong> - All the new commits will be added on the feature branch as head points to the feature</li><br/>
+        <img src="image2.png" alt="branch lessons" height="250" width="600">
+        <li><strong>git merge feature</strong> - Merge the feature branch to the main branch</li><br>
+        <li><strong>git merge origin/master</strong> - To merge local and remote repository</li><br>
+        <li><strong>git clone URL</strong> - Primarily used to point to an existing repo and make a clone or copy of that repo at in a new directory, at another location</li><br/>
+        <img src="image3.png" alt="Clone" height="250" width="600">
+        <li><strong>git remote add upstream</strong> - From where you have forked it and origin is personal</li><br>
+        <li><strong>Pull Request</strong> - A pull request is a proposal to merge a set of changes from one branch into another
+            <ul><br>
+                <li>Changes in the forked branch appears in the main project's main branch</li><br>
+                <li>One branch can have only one pull request</li><br>
+                <li>One can have multiple branches</li><br>
+            </ul> 
+        </li><br>
+        <li><strong>git push original branch -f</strong> - overwrites the remote repository to match exactly what your local repo looked like when you ran the command</li><br>
+        <li><strong>git fetch --all --prune</strong> - a command that combines the functionality of git fetch and git remote prune. It fetches updates from the remote repository and removes any remote-tracking branches that no longer exist on the remote.</li><br>
+        <li><strong>git reset --hard upstream/main</strong> - Reset the main branch of origin to the main branch of upstream(both the branches will have the same commits)</li><br>
+        <li><strong>git pull origin master</strong> - To pull from remote repository</li><br>
+        <li><strong>git pull upstream main</strong> - Used to fetch and download content from a remote repository and immediately update the local repository to match that content</li><br>
+        <li><strong>s (squash)</strong> - To combine multiple commits into one</li><br>
+        <li><strong>Merge Conflict</strong> - When the same line is changed by many people merge conflict occurs</li><br>
+        <li><strong>Rebase</strong> - It is a process of integrating a series of commits on top of another base tip. It takes all the commits of a branch and appends them to the commits of a new branch</li><br>
+        <li><strong>git cherry-pick commit_id</strong> - In Git, cherry-picking is taking a single commit from one branch and adding it as the latest commit on another branch</li><br>
+        <li>Which flag of git reset command can be used to keep changes that were made on target commit after the reset operation - <strong>git reset --soft</strong></li><br>
+       <li>Which flag of git reset command can be used to drop changes that were made on target commit after the reset operation - <strong>git reset --hard</strong></li><br/>
+       <img src="image5.png" alt="reset lesson" height="250" width="600">
+       <li><strong>git reflog</strong> - It shows the state of repository. If you accidentally delete a branch or reset it incorrectly, git reflog helps you find the commit (SHA-identifier) to restore it</li><br>
+       <li>Git Object Contents
+          <ul><br>
+            <li>Commit - It is simply a commit</li><br>
+            <li>Tree - It is a folder of file system associated with the repository</li><br>
+            <li>Blob - It is simply a data</li><br>
+          </ul>
+       </li>
+    </ol>
+
+</body>
+</html>
