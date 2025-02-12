@@ -1,13 +1,14 @@
 .float-left{
     float: left;
     margin: 20px;
+    border:5px solid;
 }
 
 .float-right{
     float: right;
     margin: 10px;
 }
-img{
-    border:50px solid;
+img{ 
     opacity: 0.5;
 }
+
