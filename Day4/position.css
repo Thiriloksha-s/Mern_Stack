@@ -1,0 +1,49 @@
+/*.relative-pos{
+    position:relative;
+    background-color: rgb(245, 191, 240);
+    left:50px;
+    top:50px;
+    z-index:5;
+}
+.relative-pos1{
+    position:relative;
+    background-color: rgb(188, 242, 224);
+    z-index:5;
+}
+.relative-pos2{
+    position:relative;
+    background-color: rgb(191, 226, 239);
+    left:50px;
+    top:50px;
+    z-index:1;
+}
+.div-pos{
+    background-color: rgb(168, 245, 245);
+    width:100px;
+    height: 100px;
+    z-index:1;
+    position: relative;
+}
+.div-pos{
+
+    border: 2px solid rgb(247, 180, 13);
+    margin: 50px;
+    width:500px;
+    height:500px;
+    position:relative;
+}
+.abs-pos{
+    position:relative;
+    left:50px;
+    top:50px;
+}*/
+.fixed-pos{
+    position: fixed;
+    top: 50px;
+    background-color: aqua;
+}
+
+/*.sticky-pos{
+    position: sticky;
+    top: 10px;
+}*/

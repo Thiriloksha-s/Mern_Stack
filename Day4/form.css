@@ -1,0 +1,11 @@
+/*Styling for all fields*/
+input{
+    border: 2px solid rgb(25, 227, 160);
+    border-radius: 20px;
+}
+
+/*Styling for particular field*/
+input[type=number]{
+    border: 2px solid rgb(178, 47, 183);
+    border-radius: 20px;
+}
