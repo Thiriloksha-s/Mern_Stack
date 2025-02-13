@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition and Animation</title>
+    <link rel="stylesheet" href="transitionsandanimations.css">
+    <style>
+        @keyframes animationDiv{
+            /*from{
+                background-color:rgb(235, 235, 144); ;
+            }
+            to{
+                background-color: rgb(225, 13, 87);;
+            }*/
+            0%{
+                /*opacity: 1;*/
+                left:0px;
+                top:0px;
+                background-color: rgb(114, 215, 182);
+            }
+            25%{
+                /*opacity: 0.75;*/
+                left:0px;
+                top:100px;
+                background-color: rgb(230, 114, 114);
+            }
+            50%{
+               /* opacity: 0.5;*/
+               left:100px;
+                top:100px;
+                background-color: rgb(84, 84, 231);
+            }
+            75%{
+                /*opacity: 0.25;*/
+                left:100px;
+                top:0px;
+                background-color:rgb(129, 245, 129);
+            }
+            100%{
+                /*opacity: 0;*/
+                left:0px;
+                top:0px;
+                background-color:rgb(78, 240, 240);
+            }
+        }
+        .Animation{
+            animation-name: animationDiv;
+            background-color: rgb(235, 235, 144);
+            position: relative;
+            width: 100px;
+            height: 100px;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+        }
+    </style>
+</head>
+<body>
+    <h1>This is transition</h1>
+    <h1 class="transition">This is a transition example</h1>
+    <h1>This is Animation</h1>
+    <div class="Animation">Animation</div>
+</body>
+</html>

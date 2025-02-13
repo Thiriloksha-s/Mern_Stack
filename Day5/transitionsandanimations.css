@@ -1,0 +1,15 @@
+.transition{
+    color:rgb(245, 35, 147);
+    background-color: rgb(249, 210, 249);
+    transition:background-color 5s, color 5s, padding 5s,width 5s,height 5s,transform 1s,opacity 2s;
+    opacity:1;
+}
+.transition:hover{
+   background-color:rgb(245, 35, 147);
+   color: rgb(249, 210, 249);
+   padding: 30px;
+   height:100px;
+   width: 300px;
+   transform: rotate(360deg);
+   opacity: 0.9;
+}
