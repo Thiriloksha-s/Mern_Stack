@@ -1,4 +1,4 @@
-/*
+
 //Objects
 
 //1st type of object declaration
@@ -48,4 +48,4 @@ set.add("Hello")
 console.log(set);
 set.add("Hello")
 console.log(set);
-console.log(typeof(set))*/
+console.log(typeof(set))
