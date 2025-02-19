@@ -1,0 +1,8 @@
+nav{
+    display: flex;
+    list-style-type: none;
+    background-color: rgb(173, 223, 243);
+    color:black;
+    justify-content: space-around;
+    padding: 10px;
+}
