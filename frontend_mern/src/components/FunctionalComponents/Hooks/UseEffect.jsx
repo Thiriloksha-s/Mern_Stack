@@ -1,10 +1,11 @@
 import {useState,useEffect} from 'react'
 const UseEffect = () => {
     var[text,setText]=useState("Hi");
-    var[text1,setText1]=useState("Hello");
+    var[text1,setText1]=useState("");
     useEffect(()=>{
         console.log(text);
     },[text]);
+    
     useEffect(()=>{
         console.log(text1);
     },[text1]);
@@ -15,8 +16,8 @@ const UseEffect = () => {
             <input type="text" value={text} onChange={(event)=>setText(event.target.value)}/>
             <h2>The text typed is {text}</h2>
 
-            Type your Text1:{" "}
-            <input type="text" value={text1} onChange={(event)=>setText1(event.target.value)}/>
+            Type your Text:{" "}
+            <input type="text1" value={text1} onChange={(event)=>setText(event.target.value)}/>
             <h2>The text typed is {text1}</h2>
         </section>
      )

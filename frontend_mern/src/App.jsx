@@ -8,6 +8,7 @@ import Signup from "./components/FunctionalComponents/Signup"
 import Gallery from "./components/FunctionalComponents/Gallery"
 import Contact from "./components/FunctionalComponents/Contact"
 import Navbar from './components/FunctionalComponents/Navbar'
+import Login from "./components/FunctionalComponents/Login"
 import UseEffect from './components/FunctionalComponents/Hooks/UseEffect'
 import {BrowserRouter,Routes,Route} from 'react-router-dom'
 
@@ -23,6 +24,7 @@ function App() {
                <Route path='/use-effect' element={<UseEffect/>}/>
                <Route path='/contact' element={<Contact />}/>
                <Route path='/signup' element={<Signup />}/>
+               <Route path='/login' element={<Login/>}/>
             </Routes>
         </BrowserRouter>
 
