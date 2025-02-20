@@ -12,16 +12,16 @@ const Signup = () => {
                 <input type="text" id="Firstname" placeholder="Enter your Firstname" required/>
 
                 <label>Lastname:</label>
-                <input type="text" id="Lastname" placeholder="Enter your Lastname"/>
+                <input type="text" id="Lastname" placeholder="Enter your Lastname"  required/>
 
                 <label>Email:</label>
-                <input type="email" id="Email" placeholder="Enter your Email"/>
+                <input type="email" id="Email" placeholder="Enter your Email"  required/>
 
                 <label>Password:</label>
-                <input type="text" id="Password" placeholder="Enter your Password"/>
+                <input type="password" id="Password" placeholder="Enter your Password"  required/>
 
                 <label>Confirm Password:</label>
-                <input type="text" id="CnfPassword" placeholder="Confirm Password"/>
+                <input type="password" id="CnfPassword" placeholder="Confirm Password"  required/>
 
                 <button type="submit" class="btn">Sign Up</button>
             </div>

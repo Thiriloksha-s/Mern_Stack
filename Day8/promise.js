@@ -56,7 +56,7 @@ function locationFinder(loc,time){
 }
 isLocationFound=((loc,time)=>{
      location="Chennai"
-     t=3000
+     t=1000
      if(loc===location && t<=time) return true
      else return false
 })
