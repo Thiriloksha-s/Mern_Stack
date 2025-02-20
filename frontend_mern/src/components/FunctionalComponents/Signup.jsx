@@ -9,7 +9,7 @@ const Signup = () => {
         <form>
             <div className="FormInput">
                 <label>Firstname:</label>
-                <input type="text" id="Firstname" placeholder="Enter your Firstname"/>
+                <input type="text" id="Firstname" placeholder="Enter your Firstname" required/>
 
                 <label>Lastname:</label>
                 <input type="text" id="Lastname" placeholder="Enter your Lastname"/>

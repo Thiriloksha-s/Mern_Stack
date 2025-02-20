@@ -5,4 +5,25 @@ nav{
     color:black;
     justify-content: space-around;
     padding: 10px;
+    
+}
+Link{
+    background-color: aliceblue;
+    text-decoration: none;
+}
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+.dropdown1{
+    display: block;
+    position: absolute;
+    background: white;
+    border: 1px solid #cec9c9;
+    padding: 2px;
+    list-style-type: none;
+    top: 2px;
+}
+.dropdown1 li{
+    padding: 5px;
 }

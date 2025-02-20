@@ -1,7 +1,7 @@
 import "../css/Navbar.css";
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import '../css/Dropdown.css'
+
 const Navbar = () => {
   const [isOpen, setOpen]=useState(false);
   return (
@@ -28,8 +28,9 @@ const Navbar = () => {
           </ol>
         </div>
         <li>*/}
-          <li className="dropdown" onMouseEnter={()=>setOpen(true)} onMouseLeave={() => setOpen(false)}>
-            <span>Hooks</span>
+          
+          <li className="dropdown" onMouseEnter={()=>setOpen(!isOpen)} onMouseLeave={() => setOpen(!isOpen)}>
+          <span>Hooks</span>
             {isOpen && (
               <ol className="dropdown1">
                 <li>
@@ -37,6 +38,15 @@ const Navbar = () => {
                 </li>
                 <li>
                   <Link to="/use-effect">UseEffect</Link>
+                </li>
+                <li>
+                  <Link to="/use-effect-api">UseEffectAPI</Link>
+                </li>
+                <li>
+                  <Link to="/use-ref">UseRef</Link>
+                </li>
+                <li>
+                  <Link to="/use-memo">UseMemo</Link>
                 </li>
               </ol>
             )}
