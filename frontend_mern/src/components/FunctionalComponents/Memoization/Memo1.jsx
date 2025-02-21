@@ -1,6 +1,7 @@
 import React from 'react'
 import Number from './Number1'
-const Memo = () => {
+import Text from './Text'
+const Memo1 = () => {
   return (
     <div>
         <h1>This is a Memo component</h1>
@@ -10,4 +11,4 @@ const Memo = () => {
   )
 }
 
-export default Memo
+export default Memo1

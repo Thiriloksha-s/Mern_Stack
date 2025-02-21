@@ -68,14 +68,9 @@ const Navbar = () => {
                 <li>
                   <Link to="/memo">Memo</Link>
                 </li>
+            
                 <li>
-                  <Link to="/number">Number</Link>
-                </li>
-                <li>
-                  <Link to="/text">Text</Link>
-                </li>
-                <li>
-                  <Link to="/lazyloadingandsuspense">LazyLoadingAndSuspense</Link>
+                  <Link to="/lazy">LazyLoadingAndSuspense</Link>
                 </li>
               </ol>
             )}

@@ -18,8 +18,7 @@ import UseCallback from './components/FunctionalComponents/Hooks/UseCallback'
 import UseMemoize from './components/FunctionalComponents/Hooks/UseMemoize'
 import HoC from './components/FunctionalComponents/HoC/HoC'
 import Memo from './components/FunctionalComponents/Memoization/Memo1'
-import Number from './components/FunctionalComponents/Memoization/Number1'
-import Text from './components/FunctionalComponents/memoization/Text'
+
 import LazyLoadingAndSuspense from './components/FunctionalComponents/Memoization/LazyLoadingAndSuspense.jsx'
 import {BrowserRouter,Routes,Route} from 'react-router-dom'
 

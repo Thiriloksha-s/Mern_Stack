@@ -1,6 +1,6 @@
 import React from 'react'
 import {Suspense,lazy} from "react"
-const LazyComp=lazy(()=>import ("../Signup.jsx"))
+const LazyComp=lazy(()=>import ("../Signup"))
 
 const LazyLoadingAndSuspense = () => {
   return (
