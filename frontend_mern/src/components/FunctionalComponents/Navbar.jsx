@@ -4,6 +4,7 @@ import { useState } from "react";
 
 const Navbar = () => {
   const [isOpen, setOpen]=useState(false);
+  const [open, setopen]=useState(false);
   return (
     <header>
       <nav>
@@ -29,7 +30,7 @@ const Navbar = () => {
         </div>
         <li>*/}
           
-          <li className="dropdown" onMouseEnter={()=>setOpen(!isOpen)} onMouseLeave={() => setOpen(!isOpen)}>
+          <div className="dropdown" onMouseEnter={()=>setOpen(!isOpen)} onMouseLeave={() => setOpen(!isOpen)}>
           <span>Hooks</span>
             {isOpen && (
               <ol className="dropdown1">
@@ -56,10 +57,29 @@ const Navbar = () => {
                 </li>
               </ol>
             )}
-          </li>
+          </div>
           <li>
           <Link to="/hoc">HoC</Link>
         </li>
+        <div className="dropdown" onMouseEnter={()=>setopen(!open)} onMouseLeave={() => setopen(!open)}>
+          <span>Memoization</span>
+            {open && (
+              <ol className="dropdown1">
+                <li>
+                  <Link to="/memo">Memo</Link>
+                </li>
+                <li>
+                  <Link to="/number">Number</Link>
+                </li>
+                <li>
+                  <Link to="/text">Text</Link>
+                </li>
+                <li>
+                  <Link to="/lazyloadingandsuspense">LazyLoadingAndSuspense</Link>
+                </li>
+              </ol>
+            )}
+        </div>
         <li>
           <Link to="/contact">Contact</Link>
         </li>

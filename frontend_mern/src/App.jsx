@@ -17,6 +17,10 @@ import UseMemo from './components/FunctionalComponents/Hooks/UseMemo'
 import UseCallback from './components/FunctionalComponents/Hooks/UseCallback'
 import UseMemoize from './components/FunctionalComponents/Hooks/UseMemoize'
 import HoC from './components/FunctionalComponents/HoC/HoC'
+import Memo from './components/FunctionalComponents/Memoization/Memo1'
+import Number from './components/FunctionalComponents/Memoization/Number1'
+import Text from './components/FunctionalComponents/memoization/Text'
+import LazyLoadingAndSuspense from './components/FunctionalComponents/Memoization/LazyLoadingAndSuspense.jsx'
 import {BrowserRouter,Routes,Route} from 'react-router-dom'
 
 function App() {
@@ -39,6 +43,8 @@ function App() {
                <Route path='/contact' element={<Contact />}/>
                <Route path='/signup' element={<Signup />}/>
                <Route path='/login' element={<Login/>}/>
+               <Route path='/memo' element={<Memo/>}/>
+               <Route path='/lazy' element={<LazyLoadingAndSuspense/>}/>
             </Routes>
         </BrowserRouter>
 
