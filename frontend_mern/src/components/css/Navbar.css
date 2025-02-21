@@ -7,10 +7,8 @@ nav{
     padding: 10px;
     
 }
-Link{
-    background-color: aliceblue;
-    text-decoration: none;
-}
+
+
 .dropdown{
     position: relative;
     display: inline-block;
@@ -26,4 +24,5 @@ Link{
 }
 .dropdown1 li{
     padding: 5px;
+    text-decoration: none;
 }
