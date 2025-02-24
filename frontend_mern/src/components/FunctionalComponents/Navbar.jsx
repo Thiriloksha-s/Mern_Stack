@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 
 const Navbar = () => {
-  const [isOpen, setOpen]=useState(false);
-  const [open, setopen]=useState(false);
+  const [isOpen, setOpen] = useState(false);
+  const [open, setopen] = useState(false);
   return (
     <header>
       <nav>
@@ -29,51 +29,59 @@ const Navbar = () => {
           </ol>
         </div>
         <li>*/}
-          
-          <div className="dropdown" onMouseEnter={()=>setOpen(!isOpen)} onMouseLeave={() => setOpen(!isOpen)}>
+
+        <div
+          className="dropdown"
+          onMouseEnter={() => setOpen(!isOpen)}
+          onMouseLeave={() => setOpen(!isOpen)}
+        >
           <span>Hooks</span>
-            {isOpen && (
-              <ol className="dropdown1">
-                <li>
-                  <Link to="/use-state">UseState</Link>
-                </li>
-                <li>
-                  <Link to="/use-effect">UseEffect</Link>
-                </li>
-                <li>
-                  <Link to="/use-effect-api">UseEffectAPI</Link>
-                </li>
-                <li>
-                  <Link to="/use-ref">UseRef</Link>
-                </li>
-                <li>
-                  <Link to="/use-memo">UseMemo</Link>
-                </li>
-                <li>
-                  <Link to="/use-callback">UseCallBack</Link>
-                </li>
-                <li>
-                  <Link to="/use-memoize">UseMemoize</Link>
-                </li>
-              </ol>
-            )}
-          </div>
-          <li>
+          {isOpen && (
+            <ol className="dropdown1">
+              <li>
+                <Link to="/use-state">UseState</Link>
+              </li>
+              <li>
+                <Link to="/use-effect">UseEffect</Link>
+              </li>
+              <li>
+                <Link to="/use-effect-api">UseEffectAPI</Link>
+              </li>
+              <li>
+                <Link to="/use-ref">UseRef</Link>
+              </li>
+              <li>
+                <Link to="/use-memo">UseMemo</Link>
+              </li>
+              <li>
+                <Link to="/use-callback">UseCallBack</Link>
+              </li>
+              <li>
+                <Link to="/use-memoize">UseMemoize</Link>
+              </li>
+            </ol>
+          )}
+        </div>
+        <li>
           <Link to="/hoc">HoC</Link>
         </li>
-        <div className="dropdown" onMouseEnter={()=>setopen(!open)} onMouseLeave={() => setopen(!open)}>
+        <div
+          className="dropdown"
+          onMouseEnter={() => setopen(!open)}
+          onMouseLeave={() => setopen(!open)}
+        >
           <span>Memoization</span>
-            {open && (
-              <ol className="dropdown1">
-                <li>
-                  <Link to="/memo">Memo</Link>
-                </li>
-            
-                <li>
-                  <Link to="/lazy">LazyLoadingAndSuspense</Link>
-                </li>
-              </ol>
-            )}
+          {open && (
+            <ol className="dropdown1">
+              <li>
+                <Link to="/memo">Memo</Link>
+              </li>
+
+              <li>
+                <Link to="/lazy">LazyLoadingAndSuspense</Link>
+              </li>
+            </ol>
+          )}
         </div>
         <li>
           <Link to="/res">ContextAPI</Link>
