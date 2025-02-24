@@ -18,8 +18,8 @@ import UseCallback from './components/FunctionalComponents/Hooks/UseCallback'
 import UseMemoize from './components/FunctionalComponents/Hooks/UseMemoize'
 import HoC from './components/FunctionalComponents/HoC/HoC'
 import Memo from './components/FunctionalComponents/Memoization/Memo1'
-
 import LazyLoadingAndSuspense from './components/FunctionalComponents/Memoization/LazyLoadingAndSuspense.jsx'
+import CoE from './components/FunctionalComponents/CoE.jsx'
 import {BrowserRouter,Routes,Route} from 'react-router-dom'
 
 function App() {
@@ -44,6 +44,7 @@ function App() {
                <Route path='/login' element={<Login/>}/>
                <Route path='/memo' element={<Memo/>}/>
                <Route path='/lazy' element={<LazyLoadingAndSuspense/>}/>
+               <Route path='/res' element={<CoE/>}/> 
             </Routes>
         </BrowserRouter>
 
