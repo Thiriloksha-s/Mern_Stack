@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const Login = () => {
   return (
     <div className="User">
-        <h3 className='font'>Sign In</h3>
+        <h3 className='font'>Login</h3>
         <form>
             <div className="FormInput">
                 <label>Email:</label>
