@@ -47,7 +47,7 @@ const Signup = () => {
                 <input type="email" id="Email" value={email} onChange={e=>setEmail(e.target.value)} placeholder="Enter your Email"  required/>
 
                 <label>Password:</label>
-                <input type="password" id="Password" value={password} onChange={e=>setPass(e.target.value)}placeholder="Enter your Password"  required/>
+                <input type="password" id="Password" value={password} onChange={e=>setPass(e.target.value)} placeholder="Enter your Password"  required/>
 
 
                 <label htmlFor="phoneNumber">Phone Number:</label>
