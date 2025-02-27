@@ -15,9 +15,9 @@ const Login = () => {
        email,
        password
     })
-    // const message=req.data.message
-    const isLoggedin=req.data.isLoggedin
-    if(isLoggedin){
+    const message=req.data.message
+    const loggedin=req.data.isLoggedin
+    if(logged){
         alert(message)
         navigate("/")
     }else{
