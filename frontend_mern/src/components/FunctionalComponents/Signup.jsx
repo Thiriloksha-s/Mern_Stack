@@ -15,7 +15,7 @@ const Signup = () => {
 
   const handleSignup=async(event)=>{
       event.preventDefault()
-      const req=await axios.post("https://mern-stack-11rb.onrender.com",{
+      const req=await axios.post("https://mern-stack-11rb.onrender.com/signup",{
         firstName:firstName,
         lastName:lastName,
         email:email,
