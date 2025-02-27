@@ -12,8 +12,8 @@ const Login = () => {
   const handleLogin=async(event)=>{
     event.preventDefault()
     const req=await axios.post("https://mern-stack-11rb.onrender.com/login",{
-       email,
-       password
+       email:email,
+       password:password
     })
     const message=req.data.message
     const loggedin=req.data.isLoggedin
