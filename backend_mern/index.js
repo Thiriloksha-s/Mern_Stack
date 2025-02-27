@@ -55,7 +55,7 @@ app.post("/signup", async (req, res) => {
 // })
 
 app.get("/getsignupdet",async(req, res) => {
-  const signup = Signup.find();
+  const signup = await Signup.find();
   console.log(signup);
   res.send("Signup details fetched");
 });
