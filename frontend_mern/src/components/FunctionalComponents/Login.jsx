@@ -17,7 +17,7 @@ const Login = () => {
     })
     const message=req.data.message
     const loggedin=req.data.isLoggedin
-    if(logged){
+    if(loggedin){
         alert(message)
         navigate("/")
     }else{
